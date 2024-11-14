@@ -101,3 +101,27 @@ header .top .right li a img {
     margin-left: 8px;
 }
 
+
+
+
+#searchForm {
+    display: flex;
+    background-color: #F3F4F6;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#query {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F3F4F6;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
