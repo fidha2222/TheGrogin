@@ -45,13 +45,14 @@ ul, ol {
 /*Header*/
 header {
     padding: 10px 0;
-    border-bottom: 1px solid #E5E7EB;
 }
 header .top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E5E7EB;
 }
 header .top .left {
     display: flex;
@@ -101,14 +102,39 @@ header .top .right li a img {
     margin-left: 8px;
 }
 
+/*header middle*/
+header .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid #E5E7EB;
+}
+header .middle .deliver {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+header .middle .logo {
 
-
+}
+header .middle .location{
+    width: 20px;
+}
+header .middle .deliver span {
+    
+}
+header .middle .deliver .bold {
+    font-weight: 700;
+}
 
 #searchForm {
     display: flex;
     background-color: #F3F4F6;
     border-radius: 5px;
     padding: 5px;
+    width: 680px;
 }
 
 #query {
@@ -124,4 +150,205 @@ button {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+header .middle .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: end;
+}
+header .middle .right a {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 10px;
+}
+header .middle .right a img {
+    width: 20px;
+}
+header .middle .right a span {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+/*header bottom*/
+
+header .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #E5E7EB;
+    color: black;
+}
+header .bottom .left ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+header .bottom .left ul li {
+    margin-right: 15px;
+}
+header .bottom .left ul li a {
+    color: black;
+}
+header .bottom .left ul li .shop {
+    color: #634C9F;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #634C9F;
+}
+header .bottom .left ul li .fruitsvegitables {
+    color: #634C9F;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #634C9F;
+}
+header .bottom .left ul li a:hover {
+    color: #634C9F;
+}
+
+header .bottom .right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+header .bottom .right ul li {
+    margin-left: 15px;
+}
+header .bottom .right ul li a {
+    color: black;
+}
+
+header .bottom .right ul li .finished {
+    color: red;
+}
+header .bottom .right ul li .finished span {
+    color: #fff;
+    background-color: red;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+/*productsContainer*/
+.productsContainer {
+
+}
+#bottomContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-top: 10px;
+}
+#bottomContainer .bottomLeft {
+    background-color: beige;
+    flex: 0.2;
+    padding-right: 30px;
+}
+#bottomContainer .bottomRight {
+    background-color: violet;
+    flex: 0.8;
+}
+
+#priceFilter {
+
+}
+#priceFilter h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.price-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.price-inputs-min {
+    display: flex;
+    flex-direction: column;
+}
+.price-inputs-max {
+    display: flex;
+    flex-direction: column;
+}
+.price-inputs span {
+    margin: 0 10px;
+    position: relative;
+    top: 8px;
+}
+
+.price-input {
+    width: 115px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.price-range {
+    position: relative;
+    width: 300px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.price-range input[type="range"] {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    opacity: 0;
+}
+
+.price-range-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.price-range-thumb {
+    position: absolute;
+    top: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.min-thumb {
+    left: 0;
+}
+
+.max-thumb {
+    right: 0;
+}
+.price-display {
+    margin-bottom: 10px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
