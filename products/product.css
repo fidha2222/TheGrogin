@@ -8,8 +8,6 @@ ul, ol, li {
     list-style-type: none;
     padding: 0;
 }
-
-
 .wrapper {
     width: 100%;
     max-width: 1200px;
@@ -17,21 +15,20 @@ ul, ol, li {
 }
 
 
-/*Font styles*/
 @font-face {
     font-family: 'barlow-medium-webfont';
-    src: url('assets/fonts/barlow-medium-webfont.woff') format('woff'),
-    url('assets/fonts/barlow-medium-webfont.woff2') format('woff2');
+    src: url('/assets/fonts/barlow-medium-webfont.woff') format('woff'),
+    url('/assets/fonts/barlow-medium-webfont.woff2') format('woff2');
 }
 @font-face {
     font-family: 'barlow-bold-webfont';
-    src: url('assets/fonts/barlow-bold-webfont.woff') format('woff'),
-    url('assets/fonts/barlow-bold-webfont.woff2') format('woff2');
+    src: url('/assets/fonts/barlow-bold-webfont.woff') format('woff'),
+    url('/assets/fonts/barlow-bold-webfont.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Inter24pt-Bold';
-    src: url('assets/fonts/Inter24pt-Bold.woff2') format('woff2'),
-        url('assets/fonts/Inter24pt-Bold.woff') format('woff');
+    src: url('/assets/fonts/Inter24pt-Bold.woff2') format('woff2'),
+        url('/assets/fonts/Inter24pt-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -39,8 +36,8 @@ ul, ol, li {
 
 @font-face {
     font-family: 'Inter24pt-Medium';
-    src: url('assets/fonts/Inter24pt-Medium.woff2') format('woff2'),
-        url('assets/fonts/Inter24pt-Medium.woff') format('woff');
+    src: url('/assets/fonts/Inter24pt-Medium.woff2') format('woff2'),
+        url('/assets/fonts/Inter24pt-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -48,16 +45,16 @@ ul, ol, li {
 
 @font-face {
     font-family: 'Inter24pt-SemiBold';
-    src: url('assets/fonts/Inter24pt-SemiBold.woff2') format('woff2'),
-        url('assets/fonts/Inter24pt-SemiBold.woff') format('woff');
+    src: url('/assets/fonts/Inter24pt-SemiBold.woff2') format('woff2'),
+        url('/assets/fonts/Inter24pt-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Inter24pt-Regular';
-    src: url('assets/fonts/Inter24pt-Regular.woff2') format('woff2'),
-        url('assets/fonts/Inter24pt-Regular.woff') format('woff');
+    src: url('/assets/fonts/Inter24pt-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Inter24pt-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -85,8 +82,9 @@ ul, ol, li {
 }
 .global_notification .right span {
     font-family: 'Inter24pt-Bold', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
+
 
 /*Header*/
 header {
@@ -201,7 +199,6 @@ button {
 header .middle {
     font-family: 'Inter24pt-Medium', sans-serif;
 }
-
 header .middle .right {
     display: flex;
     flex-direction: row;
@@ -219,7 +216,7 @@ header .middle .right a img {
 }
 header .middle .right a span {
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     color: black;
 }
@@ -247,7 +244,6 @@ header .bottom .left ul li {
 }
 header .bottom .left ul li a {
     color: black;
-    font-size: 15px;
 }
 header .bottom .left ul li .shop {
     color: #634C9F;
@@ -274,7 +270,6 @@ header .bottom .right ul li {
 }
 header .bottom .right ul li a {
     color: black;
-    font-size: 15px;
 }
 
 header .bottom .right ul li .finished {
@@ -288,321 +283,377 @@ header .bottom .right ul li .finished span {
 }
 
 
-/*productsContainer*/
-.productsContainer {
-    
+/*head*/
+.head {
+    font-family: 'Inter24pt-Regular', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.productsContainer .topHeader {
-    font-family: 'Inter24pt-Regular',sans-serif;
-    font-size: 14px;
-    color: #9CA3AF;
-}
-.productsContainer .topHeader img {
-    
-}
-.productsContainer .topHeader span {
-    color: #000;
-}
-#bottomContainer {
+.head ul {
     display: flex;
     flex-direction: row;
+}
+.head ul li {
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.head ul li a {
+   color: #9CA3AF;
+}
+.head ul li a img {
+
+}
+
+
+/*product*/
+#product {
     flex: 1;
-    margin-top: 30px;
-}
-#bottomContainer .bottomLeft {
-    flex: 0.2;
-    padding-right: 30px;
-}
-#priceFilter {
-    font-family: 'Inter24pt-Regular', sans-serif;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E5E7EB;
-}
-#priceFilter h4 {
-    font-family: 'Inter24pt-SemiBold', sans-serif;
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-
-.price-filter {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.price-inputs {
-    
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.price-inputs-min {
-    display: flex;
-    flex-direction: column;
-}
-.price-inputs-max {
-    display: flex;
-    flex-direction: column;
-}
-.price-inputs span {
-    margin: 0 10px;
-    position: relative;
-    top: 8px;
 }
 
-.price-input {
-    width: 115px;
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: left;
+#product .left {
+    flex: 0.5;
 }
-
-.price-range {
-    position: relative;
-    width: 300px;
-    height: 10px;
+#product .left .top {
+    
+}
+#product .left .top .offer {
+    font-family: 'Inter24pt-Bold', sans-serif;
+    font-size: 12px;
+    background-color:#DC2626;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 13px;
+    margin-right: 5px;
+}
+#product .left .top .organic {
+    font-family: 'Inter24pt-Bold', sans-serif;
+    font-size: 12px;
+    background-color: #92ff04;
+    color: #166534;
+    font-weight: 600;
     margin-top: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 13px;
 }
+#product .left .productImg {
+    width: 500px;
+}
+#product .left .zoom {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#product .left .bottom {
 
-.price-range input[type="range"] {
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    opacity: 0;
 }
-
-.price-range-track {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #000;
-    border-radius: 5px;
-}
-
-.price-range-thumb {
-    position: absolute;
-    top: -5px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #000;
-    cursor: pointer;
-}
-
-.min-thumb {
-    left: 0;
-}
-
-.max-thumb {
-    right: 0;
-}
-.priceFilterBottom {
-    font-family: 'Inter24pt-Regular', sans-serif;
+#product .left .bottom ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: center;
 }
-.price-display {
-    margin-bottom: 10px;
-}
+#product .left .bottom ul li {
 
-.filter-button {
-    padding: 10px 20px;
-    background-color: #E5E7EB;
-    color: #000;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+}
+#product .left .bottom ul li img {
+    width: 70px;
 }
 
 
-.productCategories {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E5E7EB;
+#product .right {
+    flex: 0.5;
 }
-.productCategories h4 {
-    font-family: 'Inter24pt-SemiBold', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.productCategories ul {
-    font-family: 'Inter24pt-Medium', sans-serif;
-    list-style-type: none;
-    padding: 0;
-}
-
-.productCategories ul li {
+#product .right h2 {
+    font-family: 'Inter24pt-Bold', sans-serif;
+    font-size: 35px;
     margin-bottom: 15px;
 }
-
-.productCategories ul li label {
-    font-size: 14px;
-}
-.productCategories ul li input {
-    
-}
-
-.colorFilter {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E5E7EB;
-}
-.colorFilter h4 {
-    font-family: 'Inter24pt-SemiBold', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.colorFilter .color {
+#product .right .rating {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6B7280;
 }
-.colorFilter .color .green {
-    background-color: #81D742;
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 17px;
-}
-.colorFilter .color h6 {
-    font-family: 'Inter24pt-Regular', sans-serif;
-    font-size: 14px;
-}
-
-.brandFilter {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E5E7EB;
-}
-.brandFilter h4 {
-    font-family: 'Inter24pt-SemiBold', sans-serif;
-    padding: 20px 0;
-    font-size: 16px;
-    font-weight: 600;
-}
-.brandFilter div {
-
-}
-.brandFilter div label {
-    font-family: 'Inter24pt-Medium', sans-serif;
-    font-size: 14px;
-}
-.productStatus {
-
-}
-.productStatus h4 {
-    font-family: 'Inter24pt-SemiBold', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.productStatus ul {
-
-}
-.productStatus ul li label {
-    font-family: 'Inter24pt-Medium', sans-serif;
-    font-size: 14px;
-}
-.productStatus ul li {
-    margin-bottom: 10px;
-
-}
-.productStatus ul li label {
-}
-
-#bottomContainer .bottomRight {
-    flex: 0.8;
-}
-.bottomRight .top {
-    padding-bottom: 20px;
-}
-.bottomRight .top ul {
+#product .right .rating .stars {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
 }
-.bottomRight .top ul li {
-    font-family: 'Inter24pt-Medium', sans-serif;
-    color: #555555;
-    font-size: 14px;
-    font-weight: 500;
-    margin-left: 10px;
-}
+#product .right .rating .stars li {
 
-#banner {
-    background-image: url(assets/images/banner.jpg.jpg);
-    height: 250px;
-    background-repeat: no-repeat;
-    padding: 40px 0px 0px 40px;
 }
-#banner h6 {
-    font-family: 'Inter24pt-SemiBold', sans-serif;
-    color: #7C2D12;
-    font-size: 10px;
-    background-color: #FFEDD5;
-    padding: 8px;
-    display: inline;
-    border-radius: 5px;
+#product .right .rating .stars li img {
+    width: 12px;
+
 }
-#banner h3 {
-    font-family: 'Inter24pt-Bold', sans-serif;
-    font-size: 30px;
-    font-weight: 700;   
+#product .right .rating span {
+    font-family: 'Inter24pt-SemiBold';
+    font-size: 13px;
+    margin-right: 5px;
+    border: 1px solid #6B7280;
+    padding: 3px;
+    border-radius: 4px;
 }
-#banner p {
+#product .right .rating .review {
+    font-family: 'Inter24pt-Regular',sans-serif;
+    font-size: 12px;
+    margin-right: 5px;
+    color: #6B7280;
+}
+#product .right .rating div {
     font-family: 'Inter24pt-Regular', sans-serif;
     font-size: 13px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-#banner button {
-    font-family: 'Inter24pt-Bold',sans-serif;
-    font-size: 12px;
-    background-color: #FFFFFF;
-    border: 1px solid #E5E7EB;
-    border-radius: 33px;
     font-weight: 600;
+    color: #6B7280;
+}
+#product .right .rating div span {
+    font-family: 'Inter24pt-Medium', sans-serif;
+    color: #030712;
+    border: none;
+}
+#product .right .aboutProduct {
+    font-family: 'Inter24pt-Regular',sans-serif;
+    font-size: 14px;
+    color: #6B7280;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#product .right .rate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#product .right .rate .offerRate {
+    font-family: 'barlow-bold-webfont', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #DC2626;
+    margin-right: 8px;
+}
+#product .right .rate .mrp {
+    font-family: 'barlow-medium-webfont', sans-serif;
+    font-size: 20px;
+    color: #111827;
+    text-decoration-line:line-through
+}
+#product .right .whatsapp {
+    font-family: 'Inter24pt-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #16A34A;
+} 
+#product .right .offer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FFF7ED;
+    border: 1px solid #FFEDD5;
+    border-radius: 7px;
+}
+#product .right .offer h4 {
+    font-family: 'Inter24pt-Bold';
+    font-size: 13px;
+    color: #C2410C;
+    margin-right: 10px;
+}
+#product .right .offer ul {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#banner button img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
+#product .right .offer ul li {
+    font-family: 'Inter24pt-SemiBold', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 7px;
+    color: #C2410C;
+    background-color: #FFEDD5;
+    border: 1px solid #FED7AA;
 }
-
-#products {
+#product .right .offer p {
+    font-family: 'Inter24pt-Regular',sans-serif;
+    margin-left: 10px;
+    font-size: 11px;
+    color: #6B7280;
+}
+#product .right .buttons {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#product .right .buttons .quantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+#product .right .buttons .quantity .minus {
+    margin-right: 10px;
+}
+#product .right .buttons .quantity span {
+    margin-right: 10px;
+}
+#product .right .buttons .quantity .plus {
+
+}
+#product .right .buttons .addToCart {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    background-color: #16A34A;
+    padding: 10px 25px;
+    color: #fff;
+}
+#product .right .buttons .addToCart img {
+    margin-right: 10px;
+}
+#product .right .buttons .addToCart span {
+    font-family: 'Inter24pt-Bold',sans-serif;
+    font-size: 14px;
+}
+#product .right .buttons .buyNow {
+    display: flex;
+    flex-direction: row;
+    background-color: #212529;
+    color: #fff;
+    padding: 10px 25px;
+}
+#product .right .buttons .buyNow img {
+    margin-right: 10px;
+}
+#product .right .buttons .buyNow span {
+    font-family: 'Inter24pt-Bold',sans-serif;
+    font-size: 14px;
+}
+
+
+#product .right .more {
+    font-family: 'Inter24pt-Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    
+}
+#product .right .more .one {
+    font-size: 13px;
+    padding: 20px;
+    border: 1px solid #E5E7EB;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    max-width: 1200px;
+}
+#product .right .more .one span {
+    font-family: 'Inter24pt-Regular', sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+}
+#product .right .more .two {
+    font-size: 13px;
+    padding: 20px;
+    border: 1px solid #E5E7EB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#product .right .more .two span {
+    font-family: 'Inter24pt-Regular', sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+#product .right .bottom {
+    margin-top: 30px;
+}
+#product .right .bottom ul {
+    display: flex;
+    flex-direction: row;
+}
+#product .right .bottom ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+}
+#product .right .bottom ul li img {
+    border: 1px solid #E5E7EB;
+    border-radius: 7px;
+    margin-right: 10px;
+    padding: 8px;
+}
+#product .right .bottom ul li span {
+    font-family: 'Inter24pt-Medium',sans-serif;
+    font-size: 13px;
+}
+
+/*About*/
+
+#about {
+    font-family: 'Inter24pt-Regular',sans-serif; 
+    font-size: 14px; 
+    margin-top: 70px;
+}
+#about .top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E5E7EB;
+}
+#about .top .description {
+    font-size: 16px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4f4f4f;
+}
+#about .top .review {
+    font-size: 16px;
+}
+#about .bottom {
+    padding-bottom: 40px;
+}
+#about .bottom .one {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#relatedProducts {
+
+}
+#relatedProducts h3 {
+    font-family: 'Inter24pt-Bold',sans-serif;
+    font-size: 18px;
+}
+#products {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 70px 0;
 }
 #products .productCard {
+    width: 16.6%;
     box-shadow: 0 0 0 1px rgba(122, 122, 122, 0.5);
-    width: calc(20% - 20px); 
-    overflow: hidden;
     padding: 10px;
-    background-color: #fff;
+}
+#products .productCard a {
+
 }
 #products .productCard .top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: none;
 }
 #products .productCard .top .offer {
     font-family: 'Inter24pt-Bold', sans-serif;
@@ -613,7 +664,7 @@ header .bottom .right ul li .finished span {
     border-radius: 7px;
     font-size: 12px;
 }
-#products .productCard .product {
+#products .productCard .top .like {
 
 }
 #products .productCard h4 {
@@ -674,8 +725,12 @@ header .bottom .right ul li .finished span {
 }
 
 
+
+
+/*Footer*/
 footer {
     padding-top: 50px;
+    
     background-color: #F3F4F6;
 }
 footer .top {
@@ -696,8 +751,7 @@ footer .top .left h5 {
 }
 footer .top .left p {
     font-family: 'Inter24pt-Regular', sans-serif;
-    color: #6B7280;
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 8px;
 }
 footer .top .right {
@@ -769,7 +823,7 @@ footer .middle .one .phone img {
     margin-right: 20px;
 }
 footer .middle .one .phone .phoneT {
-    
+
 }
 footer .middle .one .phone .phoneT p {
     font-family: 'Inter24pt-Regular', sans-serif;
@@ -982,7 +1036,7 @@ footer .bottom .right ul li {
     margin-left: 10px;
 }
 footer .bottom .right ul li a {
-    
+    font-family: 'Inter24pt-Regular',sans-serif;
     font-size: 13px;
     color: #111827;
     text-decoration:underline
