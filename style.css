@@ -524,6 +524,10 @@ header .bottom .right ul li .finished span {
 .productStatus ul li label {
 }
 
+#filterSection {
+    display: none;
+}
+
 #bottomContainer .bottomRight {
     flex: 0.8;
 }
@@ -593,7 +597,7 @@ header .bottom .right ul li .finished span {
     max-width: 1200px;
 }
 #products .productCard {
-    box-shadow: 0 0 0 1px rgba(122, 122, 122, 0.5);
+    box-shadow: 0 0 0 1px rgba(214, 212, 212, 0.5);
     width: calc(20% - 20px); 
     overflow: hidden;
     padding: 10px;
@@ -986,4 +990,370 @@ footer .bottom .right ul li a {
     font-size: 13px;
     color: #111827;
     text-decoration:underline
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .global_notification {
+        padding: 10px 80px;
+    }
+    .global_notification .left {
+        font-size: 12px;
+    }
+    .global_notification .right {
+        font-size: 12px;
+    }
+    .global_notification .right span {
+        font-size: 16px;
+    }
+    header .top .left li a {
+        font-size: 12px;
+    }
+    header .top .left .text {
+        font-size: 12px;
+    }
+    header .top .left .text span {
+        font-size: 14px;
+    }
+    header .top .right li a {
+        font-size: 12px;
+    }
+    header .middle .logo {
+        width: 100px;
+    }
+    header .middle .location{
+        width: 18px;
+    }
+    header .middle .deliver span {
+        font-size: 12px;
+    }
+    header .middle .deliver .bold {
+        font-size: 14px;
+    }
+    #searchForm {
+        width: 580px;
+    }
+    header .middle .right a img {
+        width: 18px;
+    }
+    header .middle .right a span {
+        font-size: 12px;
+    }
+    header .bottom .left ul li a {
+        font-size: 14px;
+    }
+    header .bottom .right ul li a {
+        font-size: 14px;
+    }
+    .head {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #product .right h2 {
+        font-size:28px;
+    }
+    #product .right .aboutProduct {
+        font-size: 12px;
+    }
+    #products {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    #products .productCard {
+        width: 22%;
+    }
+    footer .top .left h5 {
+        font-size: 16px;
+    }
+    footer .middle .one .Q h4 {
+        font-size: 14px;
+    }
+    #money h4 {
+        font-size: 14px;
+    }
+    #help h4 {
+        font-size: 14px;
+    }
+    #know h4 {
+        font-size: 14px;
+    }
+    footer .top .left p {
+        font-size: 12px;
+    }
+
+    footer .top .right .email-container input {
+        padding: 13px 100px 13px 40px;
+    }
+    footer .top .right .email-container .submit-button {
+        padding: 12px;
+    }
+    footer .top .right p {
+        font-size: 10px;
+    }
+    footer .bottom .left p {
+        font-size: 12px;
+    }
+    footer .bottom .right ul li a {
+        font-size: 12px;
+    }
+    .productsContainer .topHeader {
+        font-size: 12px;
+    }
+    #priceFilter h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    label {
+        font-size: 12px;
+    }
+    .price-display {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .global_notification {
+        padding: 10px 35px;
+    }
+    .global_notification .left {
+        font-size: 10px;
+    }
+    .global_notification .right {
+        font-size: 10px;
+    }
+    .global_notification .right span {
+        font-size: 14px;
+    }
+    header .top .left li a {
+        font-size: 12px;
+    }
+    header .top .left .text {
+        font-size: 12px;
+    }
+    header .top .left .text span {
+        font-size: 13px;
+    }
+    header .top .right li a {
+        font-size: 12px;
+    }
+    header .middle .logo {
+        width: 100px;
+    }
+    header .middle .location{
+        width: 16px;
+    }
+    header .middle .deliver span {
+        font-size: 10px;
+    }
+    header .middle .deliver .bold {
+        font-size: 12px;
+    }
+    #searchForm {
+        width: 380px;
+    }
+    header .bottom .left ul li a {
+        font-size: 12px;
+    }
+    header .bottom .right ul li a {
+        font-size: 12px;
+    }
+    #bottomContainer .bottomLeft {
+        display: none;
+    }
+    #bottomContainer .bottomRight {
+        flex: 1;
+    }
+    .productsContainer .topHeader img {
+        width: 5px;
+        height: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #product .left .productImg {
+        width: 400px;
+    }
+    #about .top .description {
+        font-size: 13px;
+    }
+    #about .top .review {
+        font-size: 13px;
+    }
+    #about .bottom p {
+        font-size: 12px;
+    }
+    footer .middle .one .Q h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    footer .middle .one .Q p {
+        font-size: 10px;
+    }
+    footer .middle .one .phone img {
+        width: 20px;
+    }
+    footer .middle .one .phone .phoneT p {
+        font-size: 10px;
+    }
+    footer .middle .one .phone .phoneT h4 {
+        font-size: 14px;
+    }
+    footer .middle .one .email img {
+        width: 20px;
+    }
+    footer .middle .one .email .emailT p {
+        font-size: 10px;
+    }
+    footer .middle .one .email .emailT h4 {
+        font-size: 14px;
+    }
+    #money {
+        margin-right: 10px;
+    }
+    #money h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #money ul li a {
+        font-size: 10px;
+    }
+    #help {
+        margin-right: 10px;
+    }
+    #help h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #help ul li a {
+        font-size: 10px;
+    }
+    #know h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #know ul li a {
+        font-size: 10px;
+    }
+    footer .middle .three .t h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    footer .middle .three .A img {
+        width: 80px;
+    }
+    footer .middle .three .B img {
+        width: 80px;
+    }
+    footer .middle .three .A p {
+        font-size: 10px;
+    }
+    footer .middle .three .B p {
+        font-size: 10px;
+    }
+    #social h4 {
+        font-size: 12px;
+    }
+    #social ul li a img {
+        padding: 8px;
+    }
+    footer .bottom .left p {
+        font-size: 10px;
+    }
+    footer .bottom .right ul li a {
+        font-size: 9px;
+    }
+    #product .right .buttons .addToCart {
+        align-items: center;
+        padding: 8px 15px;
+    }
+    #product .right .buttons .addToCart img {
+        margin-right: 5px;
+    }
+    #product .right .buttons .addToCart span {
+        font-size: 10px;
+    }
+    #product .right .buttons .buyNow {
+        align-items: center;
+        padding: 8px 15px;
+    }
+    #product .right .buttons .buyNow img {
+        margin-right: 5px;
+    }
+    #product .right .buttons .buyNow span {
+        font-size: 10px;
+    }
+    #product .right .offer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #product .right .offer h4 {
+        margin-bottom: 5px;
+    }
+    #product .right .offer ul {
+        margin-bottom: 5px;
+    }
+    #product .right .buttons {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #product .right .whatsapp {
+        font-size: 12px;
+    }
+    #product .right h2 {
+        font-size: 20px;
+    }
+    footer .bottom {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        align-items: flex-start;
+    }
+    .productsContainer .topHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #filterSection {
+        display: block;
+        margin-left: 30px;
+    }
+    .filter-toggle {
+        display: none; /* Hide the checkbox */
+    }
+    
+    .filter-button {
+        cursor: pointer;
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .filter-button:hover {
+        background-color: #0056b3;
+    }
+    
+    .filter-container {
+        display: none;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        z-index: 15;
+    }
+    
+    .filter-toggle:checked + .filter-button + .filter-container {
+        display: block; /* Show the filter container when checkbox is checked */
+    }
 }

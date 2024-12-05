@@ -105,6 +105,127 @@
             <div class="topHeader">
                 Home <img src="assets/images/arrow_right.png" alt="">
                 <span>Shop</span>
+                <div id="filterSection" class="filterSection" style="justify-self: right;">
+    <input type="checkbox" id="filter-toggle" class="filter-toggle">
+    <label for="filter-toggle" class="filter-button">Filter</label>
+    <div id="filter-container" class="filter-container">
+        <div class="bottomLeft">
+            <div id="priceFilter">
+                <h4>Widget price filter</h4> 
+                <form class="price-filter">
+                    <div class="price-inputs">
+                        <div class="price-inputs-min">
+                            <label for="min-price">Min price:</label>
+                            <input type="number" id="min-price" class="price-input" value="0">
+                        </div>
+                        <span>- </span>
+                        <div class="price-inputs-max">
+                            <label for="max-price">Max price:</label>
+                            <input type="number" id="max-price" class="price-input" value="30">
+                        </div>
+                    </div>
+                    
+                    <div class="price-range">
+                        <input type="range" min="0" max="100" value="0" class="min-range">
+                        <input type="range" min="0" max="100" value="100" class="max-range">
+                        <div class="price-range-track"></div>
+                        <div class="price-range-thumb min-thumb"></div>
+                        <div class="price-range-thumb max-thumb"></div>
+                    </div>
+                    
+                    <div class="priceFilterBottom">
+                        <div class="price-display">
+                            Price: $0 - $30
+                        </div>
+                        <button type="submit" class="filter-button">Filter</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="productCategories">
+                <h4>Product Categories</h4>
+                <div class="product-categories">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="FruitsVegetables">
+                            <label for="FruitsVegetables">Fruits & Vegetables</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="BabyPregnancy">
+                            <label for="BabyPregnancy">Baby & Pregnancy</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Beverages">
+                            <label for="Beverages">Beverages</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="MeatsSeafood">
+                            <label for="MeatsSeafood">Meats & Seafood</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="BiscuitsSnacks">
+                            <label for="BiscuitsSnacks">Biscuits & Snacks</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="BreadsBakery">
+                            <label for="BreadsBakery">Breads & Bakery</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="BreaksfastDairy">
+                            <label for="BreaksfastDairy">Breakfast & Dairy</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="FrozenFoods">
+                            <label for="FrozenFoods">Frozen Foods</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="GroceryStaples">
+                            <label for="GroceryStaples">Grocery & Staples</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Healthcare">
+                            <label for="Healthcare">Healthcare</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="HouseholdNeeds">
+                            <label for="HouseholdNeeds">Household Needs</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="colorFilter">
+                <h4>Filter by Color</h4>
+                <div class="color">
+                    <span class="green"></span>
+                    <h6>Green</h6>
+                </div>
+            </div>
+
+            <div class="brandFilter">
+                <h4>Filter by Brand</h4>
+                <div>
+                    <input type="checkbox" id="Fresh">
+                    <label for="Fresh">Fresh</ label>
+                </div>
+            </div>
+
+            <div class="productStatus">
+                <h4>Product Status</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="inStock">
+                        <label for="inStock">In Stock</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="onSale">
+                        <label for="onSale">On Sale</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
             <div id="bottomContainer">
                 <div class="bottomLeft">

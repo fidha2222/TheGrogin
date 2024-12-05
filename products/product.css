@@ -168,9 +168,11 @@ header .middle .location{
     width: 20px;
 }
 header .middle .deliver span {
+    font-size: 14px;
     font-family: 'Inter24pt-Regular', serif;
 }
 header .middle .deliver .bold {
+    font-size: 16px;
     font-family: 'Inter24pt-Medium', serif;
 }
 
@@ -217,7 +219,6 @@ header .middle .right a img {
 header .middle .right a span {
     margin-top: 5px;
     font-size: 14px;
-    font-weight: 600;
     color: black;
 }
 
@@ -243,6 +244,7 @@ header .bottom .left ul li {
     margin-right: 15px;
 }
 header .bottom .left ul li a {
+    font-size: 16px;
     color: black;
 }
 header .bottom .left ul li .shop {
@@ -269,6 +271,7 @@ header .bottom .right ul li {
     margin-left: 15px;
 }
 header .bottom .right ul li a {
+    font-size: 16px;
     color: black;
 }
 
@@ -638,12 +641,13 @@ header .bottom .right ul li .finished span {
 #products {
     width: 100%;
     display: flex;
+   
     flex-direction: row;
-    margin: 20px 0 70px 0;
+    margin: 20px 0 50px 0;
 }
 #products .productCard {
     width: 16.6%;
-    box-shadow: 0 0 0 1px rgba(122, 122, 122, 0.5);
+    box-shadow: 0 0 0 1px rgba(214, 212, 212, 0.5);
     padding: 10px;
 }
 #products .productCard a {
@@ -747,12 +751,12 @@ footer .top .left {
 footer .top .left h5 {
     font-family: 'Inter24pt-Bold', sans-serif;
     font-size: 22px;
-    font-weight: 600;
 }
 footer .top .left p {
     font-family: 'Inter24pt-Regular', sans-serif;
     font-size: 14px;
     margin-top: 8px;
+    color: #6B7280;
 }
 footer .top .right {
     text-align: left;
@@ -861,7 +865,7 @@ footer .middle .two {
     flex-direction: row;
 }
 #money {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 #money h4 {
     font-family: 'Inter24pt-SemiBold',sans-serif;
@@ -883,7 +887,7 @@ footer .middle .two {
 
 
 #help {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 #help h4 {
     font-family: 'Inter24pt-SemiBold',sans-serif;
@@ -1005,7 +1009,7 @@ footer .bottom .left {
 }
 footer .bottom .left p {
     font-family: 'Inter24pt-Medium',sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #6B7280;
 }
 footer .bottom .left ul {
@@ -1037,7 +1041,294 @@ footer .bottom .right ul li {
 }
 footer .bottom .right ul li a {
     font-family: 'Inter24pt-Regular',sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     color: #111827;
     text-decoration:underline
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .global_notification {
+        padding: 10px 80px;
+    }
+    .global_notification .left {
+        font-size: 12px;
+    }
+    .global_notification .right {
+        font-size: 12px;
+    }
+    .global_notification .right span {
+        font-size: 16px;
+    }
+    header .top .left li a {
+        font-size: 12px;
+    }
+    header .top .left .text {
+        font-size: 12px;
+    }
+    header .top .left .text span {
+        font-size: 14px;
+    }
+    header .top .right li a {
+        font-size: 12px;
+    }
+    header .middle .logo {
+        width: 100px;
+    }
+    header .middle .location{
+        width: 18px;
+    }
+    header .middle .deliver span {
+        font-size: 12px;
+    }
+    header .middle .deliver .bold {
+        font-size: 14px;
+    }
+    #searchForm {
+        width: 580px;
+    }
+    header .middle .right a img {
+        width: 18px;
+    }
+    header .middle .right a span {
+        font-size: 12px;
+    }
+    header .bottom .left ul li a {
+        font-size: 14px;
+    }
+    header .bottom .right ul li a {
+        font-size: 14px;
+    }
+    .head {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #product .right h2 {
+        font-size:28px;
+    }
+    #product .right .aboutProduct {
+        font-size: 12px;
+    }
+    #products {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    #products .productCard {
+        width: 16.6%;
+    }
+    footer .top .left h5 {
+        font-size: 18px;
+    }
+    footer .top .left p {
+        font-size: 12px;
+    }
+
+    footer .top .right .email-container input {
+        padding: 13px 100px 13px 40px;
+    }
+    footer .top .right .email-container .submit-button {
+        padding: 12px;
+    }
+    footer .top .right p {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .global_notification {
+        padding: 10px 35px;
+    }
+    .global_notification .left {
+        font-size: 10px;
+    }
+    .global_notification .right {
+        font-size: 10px;
+    }
+    .global_notification .right span {
+        font-size: 14px;
+    }
+    header .top .left li a {
+        font-size: 12px;
+    }
+    header .top .left .text {
+        font-size: 12px;
+    }
+    header .top .left .text span {
+        font-size: 13px;
+    }
+    header .top .right li a {
+        font-size: 12px;
+    }
+    header .middle .logo {
+        width: 100px;
+    }
+    header .middle .location{
+        width: 16px;
+    }
+    header .middle .deliver span {
+        font-size: 10px;
+    }
+    header .middle .deliver .bold {
+        font-size: 12px;
+    }
+    #searchForm {
+        width: 380px;
+    }
+    header .bottom .left ul li a {
+        font-size: 12px;
+    }
+    header .bottom .right ul li a {
+        font-size: 12px;
+    }
+    #product .left .productImg {
+        width: 400px;
+    }
+    #about .top .description {
+        font-size: 13px;
+    }
+    #about .top .review {
+        font-size: 13px;
+    }
+    #about .bottom p {
+        font-size: 12px;
+    }
+    footer .middle .one .Q h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    footer .middle .one .Q p {
+        font-size: 10px;
+    }
+    footer .middle .one .phone img {
+        width: 20px;
+    }
+    footer .middle .one .phone .phoneT p {
+        font-size: 10px;
+    }
+    footer .middle .one .phone .phoneT h4 {
+        font-size: 14px;
+    }
+    footer .middle .one .email img {
+        width: 20px;
+    }
+    footer .middle .one .email .emailT p {
+        font-size: 10px;
+    }
+    footer .middle .one .email .emailT h4 {
+        font-size: 14px;
+    }
+    #money {
+        margin-right: 10px;
+    }
+    #money h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #money ul li a {
+        font-size: 10px;
+    }
+    #help {
+        margin-right: 10px;
+    }
+    #help h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #help ul li a {
+        font-size: 10px;
+    }
+    #know h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #know ul li a {
+        font-size: 10px;
+    }
+    footer .middle .three .t h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    footer .middle .three .A img {
+        width: 80px;
+    }
+    footer .middle .three .B img {
+        width: 80px;
+    }
+    footer .middle .three .A p {
+        font-size: 10px;
+    }
+    footer .middle .three .B p {
+        font-size: 10px;
+    }
+    #social h4 {
+        font-size: 12px;
+    }
+    #social ul li a img {
+        padding: 8px;
+    }
+    footer .bottom .left p {
+        font-size: 10px;
+    }
+    footer .bottom .right ul li a {
+        font-size: 9px;
+    }
+    #product .right .buttons .addToCart {
+        align-items: center;
+        padding: 8px 15px;
+    }
+    #product .right .buttons .addToCart img {
+        margin-right: 5px;
+    }
+    #product .right .buttons .addToCart span {
+        font-size: 10px;
+    }
+    #product .right .buttons .buyNow {
+        align-items: center;
+        padding: 8px 15px;
+    }
+    #product .right .buttons .buyNow img {
+        margin-right: 5px;
+    }
+    #product .right .buttons .buyNow span {
+        font-size: 10px;
+    }
+    #product .right .offer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #product .right .offer h4 {
+        margin-bottom: 5px;
+    }
+    #product .right .offer ul {
+        margin-bottom: 5px;
+    }
+    #product .right .buttons {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #product .right .whatsapp {
+        font-size: 12px;
+    }
+    #product .right h2 {
+        font-size: 20px;
+    }
+    footer .bottom {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        align-items: flex-start;
+    }
 }
