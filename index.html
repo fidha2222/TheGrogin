@@ -47,7 +47,7 @@
                     <span class="bold">all</span>
                 </div>
                 <form id="searchForm" action="https://www.google.com/search" method="get" role="search">
-                    <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                    <input type="search" id="query" name="q" placeholder="Search for products, categories or brands..." aria-label="Search through site content">
                     <button type="submit"><img src="assets/icons/search.svg" alt="Search"></button>
                 </form>
                 <div class="right">
@@ -94,7 +94,7 @@
                             <a href="#">Trending Products <img src="assets/icons/down_arrow.svg" alt=""></a>
                         </li>
                         <li>
-                            <a href="#" class="finished">Almost Finished <span>SALE</span> <img src="assets/icons/down_arrow.svg" alt=""></a>
+                            <a href="#" class="finished">Almost Finished <span>SALE</span> <img src="assets/images/red.png" alt=""></a>
                         </li>
                     </ul>
                 </nav>
@@ -234,12 +234,12 @@
                         <form class="price-filter">
                             <div class="price-inputs">
                                 <div class="price-inputs-min">
-                                    <label for="min-price">Min price:</label>
+                                    <label for="min-price" style="color: #6B7280; letter-spacing: -0.32px; font-size: 13px; font-weight: 400;">Min price:</label>
                                     <input type="number" id="min-price" class="price-input" value="0">
                                 </div>
                                 <span>- </span>
                                 <div class="price-inputs-max">
-                                    <label for="max-price">Max price:</label>
+                                    <label for="max-price" style="color: #6B7280; letter-spacing: -0.32px; font-size: 13px; font-weight: 400;">Max price:</label>
                                     <input type="number" id="max-price" class="price-input" value="30">
                                 </div>
                             </div>
@@ -265,33 +265,53 @@
                         <h4>Product Categories</h4>
                         <div class="product-categories">
                             <ul>
-                                <li>
-                                    <input type="checkbox" id="FruitsVegetables">
-                                    <label for="product1">Fruits & Vegetables</label>
+                                <li style="justify-content: space-between;">
+                                    <span class="left">
+                                        <input type="checkbox" style="accent-color: #634C9F;" id="FruitsVegetables">
+                                        <label for="product1" style="color:#634C9F;">Fruits & Vegetables</label> 
+                                    </span>
+                                    
+                                    <span class="right"><img src="assets/icons/plus.svg" alt=""></span>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="BabyPregnancy">
                                     <label for="product2">Baby & Pregnancy</label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" id="Beverages">
-                                    <label for="product3">Beverages</label>
+                                <li style="justify-content: space-between;">
+                                    <span class="left">
+                                        <input type="checkbox" id="Beverages">
+                                        <label for="product3">Beverages</label>
+                                    </span>
+                                    
+                                    <span class="right"><img src="assets/icons/plus.svg" alt=""></span>
                                 </li>
-                                <li>
-                                    <input type="checkbox" id="MeatsSeafood">
-                                    <label for="product1">Meats & Seafood</label>
+                                <li style="justify-content: space-between;">
+                                    <span class="left">
+                                        <input type="checkbox" id="MeatsSeafood">
+                                        <label for="product1">Meats & Seafood</label>
+                                    </span>
+                                    
+                                    <span class="right"><img src="assets/icons/plus.svg" alt=""></span>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="BiscuitsSnacks">
                                     <label for="product2">Biscuits & Snacks</label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" id="BreadsBakery">
-                                    <label for="product3">Breads & Bakery</label>
+                                <li style="justify-content: space-between;">
+                                    <span class="left">
+                                        <input type="checkbox" id="BreadsBakery">
+                                        <label for="product3">Breads & Bakery</label>  
+                                    </span>
+                                    
+                                    <span class="right"><img src="assets/icons/plus.svg" alt=""></span>
                                 </li>
-                                <li>
-                                    <input type="checkbox" id="BreaksfastDairy">
-                                    <label for="product2">Breaksfast & Dairy</label>
+                                <li style="justify-content: space-between;">
+                                    <span class="left">
+                                        <input type="checkbox" id="BreaksfastDairy">
+                                        <label for="product2">Breaksfast & Dairy</label>
+                                    </span>
+                                    
+                                    <span class="right"><img src="assets/icons/plus.svg" alt=""></span>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="FrozenFoods">
@@ -346,8 +366,24 @@
                 <div class="bottomRight">
                     <div class="top">
                         <ul>
-                            <li><img src="" alt="">Clear filters</li>
-                            <li>Fruits & Vegetables</li>
+                            <li style="display: flex; align-items: center; margin-right: 8px;">
+                                <span 
+                                    style="height: 12px; width: 2px; color: #222222; background-color:#222222; display: inline-block;transform: rotate(45deg);">
+                                .</span> 
+                                <span 
+                                    style="height: 12px; width: 2px; color: #222222; background-color:#222222; display: inline-block;transform: rotate(-45deg); position: relative; right: 3px; margin-right: 8px;">
+                                .</span>
+                                Clear filters
+                            </li>
+                            <li style="display: flex; align-items: center;">
+                                <span 
+                                    style="height: 12px; width: 2px; color: #222222; background-color:#222222; display: inline-block;transform: rotate(45deg); ">
+                                .</span> 
+                                <span 
+                                    style="height: 12px; width: 2px; color: #222222; background-color:#222222; display: inline-block;transform: rotate(-45deg); position: relative; right: 3px; margin-right: 8px;">
+                                .</span>
+                                Fruits & Vegetables
+                            </li>
                         </ul>
                     </div>
                     <div id="banner">
@@ -360,7 +396,7 @@
                     </div>
 
                     <div id="products">
-                        <div class="productCard">
+                        <div class="productCard" style="border-top-left-radius: 6px;">
                             <a href="products/product.html">
                             <div class="top">
                                 <h5 class="offer">75%</h5>
@@ -389,7 +425,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">50%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/orange.jpg" alt="" class="product">
@@ -413,7 +449,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">31%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/strawberry.jpg" alt="" class="product">
@@ -437,7 +473,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">13%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/slice-strawberry.jpg" alt="" class="product">
@@ -460,9 +496,9 @@
                                 <h5 class="stock">IN STOCK</h5>
                             </div>
                         </div>
-                        <div class="productCard">
+                        <div class="productCard" style="border-top-right-radius: 6px;">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">58%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/peach.jpg" alt="" class="product">
@@ -486,7 +522,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">56%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/banana.jpg" alt="" class="product">
@@ -511,7 +547,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">16%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/wraps.jpg" alt="" class="product">
@@ -536,7 +572,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">10%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/carmel-apple.jpg" alt="" class="product">
@@ -561,7 +597,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">26%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/brinjal.jpg" alt="" class="product">
@@ -585,7 +621,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">50%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/pomegranate.jpg" alt="" class="product">
@@ -633,7 +669,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">14%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/veg-1.jpg" alt="" class="product">
@@ -657,7 +693,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">36%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/veg-2.jpg" alt="" class="product">
@@ -681,7 +717,7 @@
                         </div>
                         <div class="productCard">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">41%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/berries.jpg" alt="" class="product">
@@ -703,9 +739,9 @@
                                 <h5 class="stock">IN STOCK</h5>
                             </div>
                         </div>
-                        <div class="productCard">
+                        <div class="productCard" style="border-bottom-right-radius: 6px;">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">8%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/quest.jpg" alt="" class="product">
@@ -728,9 +764,9 @@
                                 <h5 class="stock">IN STOCK</h5>
                             </div>
                         </div>
-                        <div class="productCard">
+                        <div class="productCard" style="border-bottom-left-radius: 6px;">
                             <div class="top">
-                                <h5 class="offer">75%</h5>
+                                <h5 class="offer">17%</h5>
                                 <img src="assets/icons/heart-icon.svg" alt="" class="like">
                             </div>
                             <img src="assets/images/green-apple.jpg" alt="" class="product">
@@ -758,8 +794,7 @@
 
 
 
-                </div>
-                
+                </div>   
             </div>
             
         </div>
