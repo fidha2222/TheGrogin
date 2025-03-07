@@ -74,6 +74,7 @@ ul, ol, li {
     justify-content: space-around;
     align-items: baseline;
     padding: 10px 150px;
+    align-items: center;
 }
 .global_notification .left {
     font-family: 'Inter24pt-SemiBold', sans-serif;
@@ -81,9 +82,11 @@ ul, ol, li {
     letter-spacing: -0.32px;
 }
 .global_notification .right {
-    font-family: 'Inter24pt-Medium', sans-serif;
+    font-family: 'Inter24pt-Regular', sans-serif;
     font-size: 12px;
     letter-spacing: -0.32px;
+    display: flex;
+    align-items: center;
 }
 .global_notification .right span {
     font-family: 'Inter24pt-Bold', sans-serif;
@@ -166,7 +169,7 @@ header .middle .deliver {
     align-items: start;
 }
 header .middle .logo {
-
+    width: 150px;
 }
 header .middle .location{
     width: 20px;
@@ -186,9 +189,9 @@ header .middle .deliver .bold {
 #searchForm {
     display: flex;
     background-color: #F3F4F6;
-    border-radius: 5px;
-    padding: 5px;
-    width: 680px;
+    border-radius: 8px;
+    padding: 2px 5px;
+    width: 750px;
 }
 
 #query {
@@ -204,6 +207,7 @@ button {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
+    background: transparent;
 }
 header .middle {
     font-family: 'Inter24pt-Medium', sans-serif;
@@ -212,7 +216,7 @@ header .middle {
 header .middle .right {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     text-align: end;
 }
 header .middle .right a {
@@ -226,7 +230,7 @@ header .middle .right a img {
 }
 header .middle .right a span {
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: black;
 }
@@ -289,11 +293,12 @@ header .bottom .right ul li .finished {
     
 }
 header .bottom .right ul li .finished span {
+    font-size: 12px;
     color: #fff;
     background: linear-gradient(to right, #DC2626, #EA580C);
-    padding: 8px;
-    border-radius: 4px;
-    margin-left: 10px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    margin-left: 8px;
     margin-right: 10px;
 }
 header .bottom .right ul li .finished img {
@@ -589,8 +594,11 @@ header .bottom .right ul li .finished img {
     background-image: url(assets/images/banner.jpg.jpg);
     height: 250px;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 40px 0px 0px 40px;
     border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 #banner h6 {
     font-family: 'Inter24pt-SemiBold', sans-serif;
@@ -629,6 +637,78 @@ header .bottom .right ul li .finished img {
     margin-left: 10px;
 }
 
+.bannerBottomFilter {
+    background-color: #F3F4F6; 
+    border-radius: 6px; 
+    display: flex; 
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 10px;
+    align-items: center;
+    font-family: 'Inter24pt-Regular', sans-serif;
+    font-weight: 400;
+
+}
+.bannerBottomFilter .left {
+
+}
+.bannerBottomFilter .left h4 {
+    font-size: 12px; 
+    color: #6B7280;
+    margin-left: 15px;
+    letter-spacing: -0.32px;
+}
+.bannerBottomFilter .right {
+    display: flex;
+    align-items: center;
+}
+.bannerBottomFilter .right .one {
+
+}
+.bannerBottomFilter .right .one h4 {
+    font-size: 12px; 
+    color: #9CA3AF;
+    letter-spacing: -0.24px;
+}
+.bannerBottomFilter .right .two {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.bannerBottomFilter .right .two .twoLeft {
+
+}
+.bannerBottomFilter .right .two .twoLeft h4 {
+    font-size: 12px; 
+    color: #9CA3AF;
+    letter-spacing: -0.24px;
+}
+.bannerBottomFilter .right .two .twoRight {
+    margin-left: 30px;
+}
+.bannerBottomFilter .right .two .twoRight h4 {
+    font-size: 12px; 
+    color: #9CA3AF;
+    letter-spacing: -0.24px;
+}
+.bannerBottomFilter .right .two .twoRight .A {
+    background-color: #D1D5DB;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    margin-right: 2px;
+}
+.bannerBottomFilter .right .two .twoRight .A img {
+    
+}
+.bannerBottomFilter .right .two .twoRight .B {
+    position: relative;
+    left: -10px;
+}
+
+
+
+
 #products {
     display: flex;
     flex-direction: row;
@@ -655,8 +735,8 @@ header .bottom .right ul li .finished img {
     background-color: red;
     padding: 8px 10px;
     color: #fff;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: 34px;
+    border-bottom-left-radius: 34px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     font-size: 12px;
